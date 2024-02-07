@@ -5,7 +5,7 @@
 .main-body {
   padding-top: 20px;
   margin: 0 auto;
-  max-width: 1348px;
+  max-width: 90%;
   mat-form-field {
     width: 100%;
   }
@@ -14,4 +14,45 @@
 .action {
   display: flex;
   gap: 5px;
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.mat-cell {
+  white-space: nowrap;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #a6f8e8;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.no-data-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navbar {
+  background-color: #b8db76;
 }
