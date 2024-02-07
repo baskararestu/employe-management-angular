@@ -22,9 +22,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RupiahFormatPipe } from './rupiah-format.pipe';
+import { DateFormatPipe } from './date-format.pipe';
 
 @NgModule({
-  declarations: [AppComponent, EmpAddEditComponent],
+  declarations: [AppComponent, EmpAddEditComponent, DateFormatPipe],
   imports: [
     BrowserModule,
     AppRoutingModule,

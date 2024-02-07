@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
     'group',
     'status',
     'basicSalary',
+    'description',
     'action',
   ];
   dataSource!: MatTableDataSource<any>;

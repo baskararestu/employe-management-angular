@@ -60,26 +60,28 @@
   ],
   "employees": [
     {
-      "username": "bjephcote0",
+      "id": "1",
       "firstName": "Brinn12",
       "lastName": "Jephcote",
+      "username": "bjephcote0",
       "email": "bjephcote0@archive.org",
       "dob": "1981-10-05T12:09:39Z",
-      "basicSalary": 3700000,
       "status": "Single",
-      "groupId": "2",
-      "id": "1"
+      "groupId": "1",
+      "basicSalary": 3700000,
+      "description": "2023-12-02T09:30:00Z"
     },
     {
-      "username": "kmacelholm1",
+      "id": "2",
       "firstName": "Kenneth",
       "lastName": "MacElholm",
+      "username": "kmacelholm1",
       "email": "kmacelholm1@sina.com.cn",
       "dob": "1991-09-12T22:14:02Z",
-      "basicSalary": 1700000,
       "status": "Single",
       "groupId": "2",
-      "id": "2"
+      "basicSalary": 1700000,
+      "description": "2023-11-15T10:45:00Z"
     },
     {
       "id": "3",
@@ -90,7 +92,8 @@
       "dob": "1980-05-19T08:23:30Z",
       "status": "Single",
       "groupId": "3",
-      "basicSalary": 1700000
+      "basicSalary": 1700000,
+      "description": "2023-11-18T08:15:00Z"
     },
     {
       "id": "4",
@@ -101,7 +104,8 @@
       "dob": "1992-04-28T23:34:29Z",
       "status": "Single",
       "groupId": "4",
-      "basicSalary": 1600000
+      "basicSalary": 1600000,
+      "description": "2023-10-20T13:20:00Z"
     },
     {
       "id": "5",
@@ -112,7 +116,8 @@
       "dob": "2002-06-04T05:11:37Z",
       "status": "Single",
       "groupId": "5",
-      "basicSalary": 2900000
+      "basicSalary": 2900000,
+      "description": "2023-12-10T11:55:00Z"
     },
     {
       "id": "6",
@@ -123,7 +128,8 @@
       "dob": "1990-01-18T09:36:59Z",
       "status": "Single",
       "groupId": "6",
-      "basicSalary": 2000000
+      "basicSalary": 2000000,
+      "description": "2023-12-18T14:30:00Z"
     },
     {
       "id": "7",
@@ -134,7 +140,8 @@
       "dob": "1983-12-25T00:37:36Z",
       "status": "Single",
       "groupId": "7",
-      "basicSalary": 1600000
+      "basicSalary": 1600000,
+      "description": "2023-11-25T16:40:00Z"
     },
     {
       "id": "8",
@@ -145,7 +152,8 @@
       "dob": "1985-06-11T00:30:28Z",
       "status": "Single",
       "groupId": "8",
-      "basicSalary": 3200000
+      "basicSalary": 3200000,
+      "description": "2023-11-30T12:00:00Z"
     },
     {
       "id": "9",
@@ -156,7 +164,8 @@
       "dob": "1997-01-01T21:36:29Z",
       "status": "Single",
       "groupId": "9",
-      "basicSalary": 2800000
+      "basicSalary": 2800000,
+      "description": "2023-12-05T17:20:00Z"
     },
     {
       "id": "10",
@@ -167,18 +176,8 @@
       "dob": "1991-11-18T19:37:05Z",
       "status": "Single",
       "groupId": "10",
-      "basicSalary": 1800000
-    },
-    {
-      "id": "00c3",
-      "username": "baskararw",
-      "firstName": "Baskara",
-      "lastName": "Restu",
-      "email": "baskara@example.com",
-      "dob": "1998-10-16T17:00:00.000Z",
-      "basicSalary": 5000000,
-      "status": "Taken",
-      "groupId": "3"
+      "basicSalary": 1800000,
+      "description": "2023-11-28T09:10:00Z"
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CoreService } from '../core/core.service';
 import { EmployeeService } from '../services/employee.service';
@@ -26,8 +26,9 @@ export class EmpAddEditComponent implements OnInit {
       lastName: '',
       email: '',
       dob: '',
-      basicSalary: 0,
+      basicSalary: [0, Validators.min(0)],
       status: '',
+      description: new Date(),
       groupId: '',
     });
   }
