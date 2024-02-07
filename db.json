@@ -168,6 +168,17 @@
       "status": "Single",
       "groupId": "10",
       "basicSalary": 1800000
+    },
+    {
+      "id": "00c3",
+      "username": "baskararw",
+      "firstName": "Baskara",
+      "lastName": "Restu",
+      "email": "baskara@example.com",
+      "dob": "1998-10-16T17:00:00.000Z",
+      "basicSalary": 5000000,
+      "status": "Taken",
+      "groupId": "3"
     }
   ]
 }

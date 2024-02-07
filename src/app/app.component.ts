@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
 
   openAddEditEmpForm() {
     const dialogRef = this._dialog.open(EmpAddEditComponent, {
-      data: {},
+      data: null,
     });
     dialogRef.afterClosed().subscribe({
       next: (val) => {
@@ -92,7 +92,6 @@ export class AppComponent implements OnInit {
 
   getGroupName(groupId: number): string {
     const group = this.groups.find((g) => {
-      console.log('groupId:', groupId, 'id:', g.id);
       return g.id === groupId;
     });
     return group ? group.name : '';
