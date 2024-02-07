@@ -12,10 +12,25 @@
           placeholder="Ex. Technical"
           formControlName="firstName"
         />
+        <mat-error
+          *ngIf="
+            empForm.get('firstName')?.invalid &&
+            empForm.get('firstName')?.touched
+          "
+        >
+          First name is required
+        </mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Last Name</mat-label>
         <input matInput placeholder="Ex. Babaji" formControlName="lastName" />
+        <mat-error
+          *ngIf="
+            empForm.get('lastName')?.invalid && empForm.get('lastName')?.touched
+          "
+        >
+          Last name is required
+        </mat-error>
       </mat-form-field>
     </div>
 
@@ -28,6 +43,11 @@
           placeholder="Ex. test@gmail.com"
           formControlName="email"
         />
+        <mat-error
+          *ngIf="empForm.get('email')?.invalid && empForm.get('email')?.touched"
+        >
+          Please enter a valid email address
+        </mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Date of birth</mat-label>
@@ -38,6 +58,11 @@
           [for]="picker"
         ></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
+        <mat-error
+          *ngIf="empForm.get('dob')?.invalid && empForm.get('dob')?.touched"
+        >
+          Date of birth is required
+        </mat-error>
       </mat-form-field>
     </div>
 
@@ -50,6 +75,13 @@
           placeholder="Ex. user123"
           formControlName="username"
         />
+        <mat-error
+          *ngIf="
+            empForm.get('username')?.invalid && empForm.get('username')?.touched
+          "
+        >
+          Username is required
+        </mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Status</mat-label>
@@ -57,6 +89,13 @@
           <mat-option value="Single">Single</mat-option>
           <mat-option value="Taken">Taken</mat-option>
         </mat-select>
+        <mat-error
+          *ngIf="
+            empForm.get('status')?.invalid && empForm.get('status')?.touched
+          "
+        >
+          Status is required
+        </mat-error>
       </mat-form-field>
     </div>
 
@@ -68,6 +107,13 @@
             {{ group.name }}
           </mat-option>
         </mat-select>
+        <mat-error
+          *ngIf="
+            empForm.get('groupId')?.invalid && empForm.get('groupId')?.touched
+          "
+        >
+          Group is required
+        </mat-error>
       </mat-form-field>
     </div>
     <div class="row">
@@ -80,6 +126,14 @@
           formControlName="basicSalary"
           [min]="0"
         />
+        <mat-error
+          *ngIf="
+            empForm.get('basicSalary')?.invalid &&
+            empForm.get('basicSalary')?.touched
+          "
+        >
+          Salary is required
+        </mat-error>
       </mat-form-field>
     </div>
   </div>

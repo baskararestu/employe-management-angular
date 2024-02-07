@@ -21,15 +21,15 @@ export class EmpAddEditComponent implements OnInit {
     private _coreService: CoreService
   ) {
     this.empForm = this._fb.group({
-      username: '',
-      firstName: '',
-      lastName: '',
-      email: '',
-      dob: '',
-      basicSalary: [0, Validators.min(0)],
-      status: '',
+      username: ['', Validators.required],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      dob: ['', Validators.required],
+      basicSalary: [0, [Validators.required, Validators.min(100000)]],
+      status: ['', Validators.required],
+      groupId: ['', Validators.required],
       description: new Date(),
-      groupId: '',
     });
   }
 
@@ -77,6 +77,8 @@ export class EmpAddEditComponent implements OnInit {
           },
         });
       }
+    } else {
+      this.empForm.markAllAsTouched();
     }
   }
 }
